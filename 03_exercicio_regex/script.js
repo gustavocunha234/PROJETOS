@@ -1,0 +1,4 @@
+const validarMarca = /\w+: (Nike|Adidas|Puma|Asics)/;
+
+console.log(validarMarca.test("Marca: Nike"));
+console.log(validarMarca.test("Gustavo"));

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prova</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <section class="card">
+        <h3>Enviar Formulario</h3>
+        <button class="btn-green" id="enviar">Enviar</button>
+        <p id="mensagem"></p>
+      </section>
+      <style>
+        .card {
+          text-align: center;
+          border: 1px solid #000;
+          padding: 20px;
+          width: 300px;
+          margin: auto;
+          background-color: #fff;
+        }
+        .btn-green {
+          background-color: #28a745;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        #mensagem {
+          color: #808080;
+        }
+      </style>
+      <script>
+        const botao = document.getElementById("enviar");
+        const msg = document.getElementById("mensagem");
+
+        botao.addEventListener("click", () => {
+          msg.textContent = "Processando...";
+          botao.disabled = true;
+
+          setTimeout(() => {
+            msg.textContent = "";
+            botao.disabled = false;
+          }, 2000);
+        });
+      </script>
+    </form>
+  </body>
+</html>
+
+$stmt = $pdo->prepare("SELECT * FROM WHERE username = :user");
+$stmt->bindParam(':user', $_GET['username'], PDO::PARAM_STR); $stmt->execute()
