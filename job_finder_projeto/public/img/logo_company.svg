@@ -1,0 +1,29 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo -->
+  <rect width="300" height="300" fill="#0D0F19"/>
+
+  <!-- Forma Esquerda -->
+  <path d="M110 90 L70 150 L110 210 C125 230 160 230 145 210 L110 150 L145 90 C160 70 125 70 110 90Z"
+        fill="url(#grad1)"/>
+
+  <!-- Forma Direita -->
+  <path d="M190 90 L230 150 L190 210 C175 230 140 230 155 210 L190 150 L155 90 C140 70 175 70 190 90Z"
+        fill="url(#grad2)"/>
+
+  <!-- Gradientes -->
+  <defs>
+    <linearGradient id="grad1" x1="70" y1="90" x2="190" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF2FB9"/>
+      <stop offset="1" stop-color="#A900FF"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="230" y1="90" x2="110" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A900FF"/>
+      <stop offset="1" stop-color="#FF2FB9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Texto principal -->
+  <text x="50%" y="275" fill="white" font-size="28" font-family="Poppins, sans-serif" text-anchor="middle" font-weight="700" letter-spacing="2">
+    gustavocodes
+  </text>
+</svg>
