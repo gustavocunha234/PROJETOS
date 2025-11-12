@@ -1,0 +1,32 @@
+# Dependências
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# Banco local / dados temporários
+*.db
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ambiente
+.env
+.env.local
+
+# Logs
+logs
+*.log
+
+# Builds ou arquivos temporários
+dist/
+build/
+tmp/
+.cache/
+
+# IDEs
+.vscode/
+.idea/
+
+# Outros
+package-lock.json
